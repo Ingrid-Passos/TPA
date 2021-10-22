@@ -1,0 +1,23 @@
+using System ; 
+class Program { 
+  public static void Main ( string [] args ) {
+  int x = 0 ;
+  duplo y = 0 ; 
+  string [ ] produtos = nova string [ 10 ]; 
+  duplo [ ] preco = novo duplo [ 10 ]; 
+  para ( x = 0 ; x < 10 ; x ++ ) { 
+  Console . Limpar (); 
+  Console . Write ( $ " Digite o nome do { x + 1 } º produto: " );
+  produtos [ x ] = Console . ReadLine (); 
+  Console . Write ( " Digite o preço do produto: " ); preco [ x ] = duplo . Parse ( Console . ReadLine ()); 
+}
+  Console . Limpar (); 
+  Console . WriteLine ( " Digite o valor da pesquisa: " ); 
+  y = duplo . Parse ( Console . ReadLine ()); Console . WriteLine ( $ " Produtos com o valor da pesquisa: { y } " ); 
+para ( int x = 0 ; x < 10 ; x ++ ) {
+  if ( preco [ x ] <= y ) { 
+  Console . WriteLine ( " Produtos: " + produtos [ n ] + " Preço: " + preco [ n ]);
+  } 
+  } 
+  }
+}
