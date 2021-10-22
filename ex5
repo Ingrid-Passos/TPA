@@ -1,0 +1,28 @@
+sing System ; 
+class Program { 
+  public static void Main ( string [] args ) {
+  int x, y;
+  string [ ] nomes = nova string [ 10 ]; 
+  duplo [ , ] notas = novo duplo [ 10 , 3 ]; 
+  duplo [ ] mídias = novo duplo [ 10 ]; 
+  para ( int x = 0 ; x < 10 ; x ++ ) { 
+  Console . Write ( $ " Digite o nome do { x + 1 } ° aluno: " ); 
+  nomes [ x ] = Console . ReadLine (); 
+  para ( int y = 0 ; y  < 3 ; y ++ ) { 
+  Console . Write ( $ " Digite a { y  + 1 } ° nota: " ); notas [ x , y ] = duplo . Parse ( Console . ReadLine ()); 
+  medias [ x ] + = notas [ x , y ]; 
+  }
+  medias [ x ] = medias [ x ] / 3 ; 
+  Console . Limpar ();
+  }
+  Console . WriteLine ( " Nome \ n Notas \ n Média \ n " ); 
+  para ( int x = 0 ; x < 10; x ++ ) { 
+  if ( mídias [ x ] > = 7 ) { 
+  Console . ForegroundColor = ConsoleColor . Azul ; 
+  Console . WriteLine ( $ " { nomes [ x ]} \ n 1 ° nota: { notas [ x , 0 ]} 2 ° nota: { notas [ x , 1 ]} 3 ° nota: { notas [ x , 2 ]} \ t | { medias [ x ]} " );
+  }
+  else { Console . ForegroundColor = ConsoleColor . Vermelho ; Console . WriteLine ( $ " { nomes [ x ]} \ n 1 ° nota: { nota [ x , 0 ]} 2 ° nota: { notas [ x , 1 ]} 3 ° nota: { notas [ x , 2 ]} \ n { medias [ x ]} " );
+  }
+  }
+  }
+}
